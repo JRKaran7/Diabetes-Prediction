@@ -48,6 +48,7 @@ db = ["bmi", "HbA1c_level", "blood_glucose_level", "age"]
 
 for i in range(len(db)):
     plt.hist(dataset[db[i]])
+    plt.title('Histogram Plot')
     plt.xlabel(db[i])
     plt.ylabel("values")
     plt.show()
